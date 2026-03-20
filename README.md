@@ -1,5 +1,7 @@
 # 🧾 Gerador de Holerites — TOTVS RM + ReportLab
 
+![Tests](https://github.com/DaudRaquel/Gerador-Holerite/actions/workflows/tests.yml/badge.svg)
+
 Geração automática de holerites em PDF com dados extraídos do TOTVS RM (Oracle). Calcula INSS, IRRF e FGTS de forma progressiva e organiza os arquivos por departamento.
 
 ## ✨ Funcionalidades
