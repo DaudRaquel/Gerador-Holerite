@@ -1,51 +1,44 @@
-# 📄 Gerador de Holerites 
+# 🧾 Gerador de Holerites — TOTVS RM + ReportLab
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-![PyQt5](https://img.shields.io/badge/PyQt5-GUI-red?logo=qt)
-![HTML5](https://img.shields.io/badge/HTML-Frontend-E34F26?logo=html5)
-![CSS3](https://img.shields.io/badge/CSS-Frontend-1572B6?logo=css3)
-![PDF Automation](https://img.shields.io/badge/PDF%20Automation-FPDF%20%7C%20ReportLab-lightgrey)
-![Standalone EXE](https://img.shields.io/badge/Standalone-Executable-informational)
-
----
-
-## 💡 Sobre o Projeto
-
-O **Gerador de Holerites** é uma aplicação desktop desenvolvida para automatizar a emissão de holerites no **Departamento Pessoal (DP)** da empresa que trabalho.
-
-Criado com **PyQt5**, o sistema alia automação de processos repetitivos com uma interface visualmente agradável e intuitiva, permitindo que qualquer usuário do setor consiga gerar dezenas de holerites em poucos segundos, organizados automaticamente em pastas por período e em ordem alfabética.
-
----
+Geração automática de holerites em PDF com dados extraídos do TOTVS RM (Oracle). Calcula INSS, IRRF e FGTS de forma progressiva e organiza os arquivos por departamento.
 
 ## ✨ Funcionalidades
 
-- 🖥️ **Interface Profissional com PyQt5** (incluindo HTML e CSS embutidos)
-- 🔢 **Geração de Holerites em Massa** (Nome, Chapa, Período)
-- 📂 **Organização Inteligente de Arquivos** (Pastas por período, ordenação alfabética)
-- ✔️ **Execução Rápida via Arquivo .exe** (sem necessidade de instalar Python)
-- 📨 **Pop-up de Confirmação Visual ao Finalizar o Processo**
+- Extração de dados de funcionários ativos do TOTVS RM (Oracle)
+- Cálculo progressivo de INSS, IRRF e FGTS
+- Geração de PDFs formatados por competência
+- Organização automática em pastas por departamento
+- Modo `--mock` para testes sem banco
+
+## 🛠️ Stack
+
+`Python` · `Oracle (cx_Oracle)` · `ReportLab` · `python-dotenv`
+
+## 📁 Estrutura
+
+```
+Gerador-Holerite/
+├── main.py
+├── database/
+│   ├── conexao.py          # Conexão Oracle
+│   └── mock_data.py        # Dados fictícios
+├── utils/
+│   └── calculos.py         # INSS, IRRF, FGTS
+├── pdf/
+│   └── gerador_holerite.py # PDF com ReportLab
+├── .env.example
+└── requirements.txt
+```
+
+## 🚀 Como rodar
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+
+python main.py --mock    # teste
+python main.py           # produção
+```
 
 ---
-
-## 🖼️ Visual do Projeto
-
-| Tela | Imagem | Descrição |
-|------|--------|----------|
-| **Interface do Executável** | ![Executável](https://github.com/RaquelDaud180/Gerador-Holerite/blob/main/image-2025-06-03-102116.png) | Interface desenvolvida em PyQt5, com campos organizados para agilidade no uso diário do DP |
-| **Arquivos Gerados (Ordenados)** | ![Arquivos Gerados](https://github.com/RaquelDaud180/Gerador-Holerite/blob/main/image-2025-06-03-102218.png) | Holerites organizados em pastas automáticas, em ordem alfabética e cronológica |
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-| Área | Tecnologias |
-|------|-------------|
-| **Linguagem Principal** | Python 3.10+ |
-| **Interface Gráfica** | PyQt5 (com suporte a HTML5 + CSS3 nos componentes) |
-| **Geração de PDFs** | ReportLab / FPDF |
-| **Deploy** | PyInstaller (gerando .exe standalone) |
-
----
-
-
-
+Desenvolvido por **Raquel Daud** — [LinkedIn](https://www.linkedin.com/in/raquel-daud-72a3991a2/)
