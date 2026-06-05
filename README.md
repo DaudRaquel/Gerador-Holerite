@@ -20,7 +20,7 @@
 >
 > ### Interface e geração em lote
 >
-> ![Interface do Gerador de Holerites — geração em lote com sucesso](image-2025-06-03-102116.png)
+> ![Interface do Gerador de Holerites](image-2025-06-03-102116.png)
 >
 > ### PDFs gerados e organizados automaticamente por funcionário
 >
@@ -30,12 +30,12 @@
 >
 > ## ✨ Funcionalidades
 >
-> - 🔗 **Extração automática** de dados de funcionários ativos do TOTVS RM (Oracle)
-> - - 📊 **Cálculo progressivo** de INSS, IRRF e FGTS conforme tabelas vigentes
->   - - 📄 **Geração de PDFs** formatados por competência usando ReportLab
->     - - 📂 **Organização automática** em pastas por departamento
->       - - 🧪 **Modo `--mock`** para testes sem necessidade de banco de dados
->         - - 🔒 **Credenciais via variáveis de ambiente** — sem dados sensíveis no código
+> - **Extração automática** de dados de funcionários ativos do TOTVS RM (Oracle)
+> - - **Cálculo progressivo** de INSS, IRRF e FGTS conforme tabelas vigentes
+>   - - **Geração de PDFs** formatados por competência usando ReportLab
+>     - - **Organização automática** em pastas por departamento
+>       - - **Modo `--mock`** para testes sem necessidade de banco de dados
+>         - - **Credenciais via variáveis de ambiente** — sem dados sensíveis no código
 >          
 >           - ---
 >
