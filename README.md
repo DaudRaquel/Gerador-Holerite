@@ -87,11 +87,6 @@ python main.py --mock   # modo teste
 python main.py          # modo produção
 ```
 
----
-
-## 🔐 Segurança
-
-Nenhuma credencial está hardcoded no código. Todas as conexões são configuradas via arquivo `.env` (não versionado). O repositório inclui apenas o `.env.example` com valores genéricos de exemplo.
 
 ---
 
