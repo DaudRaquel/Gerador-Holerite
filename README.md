@@ -34,7 +34,7 @@
 > - - **Cálculo progressivo** de INSS, IRRF e FGTS conforme tabelas vigentes
 >   - - **Geração de PDFs** formatados por competência usando ReportLab
 >     - - **Organização automática** em pastas por departamento
->       - - **Modo `--mock`** para testes sem necessidade de banco de dados
+>       - - **Modo de teste** (`--mock`) sem necessidade de banco de dados
 >         - - **Credenciais via variáveis de ambiente** — sem dados sensíveis no código
 >          
 >           - ---
